@@ -26,6 +26,8 @@ add_library(${PROJECT_NAME}
     src/lib_B.cpp
 )
 
+add_library(Daixtrose::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
+
 target_include_directories(
     ${PROJECT_NAME} PUBLIC 
     include

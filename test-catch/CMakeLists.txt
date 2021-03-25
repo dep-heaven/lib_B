@@ -22,7 +22,7 @@ function(define_unit_test)
     target_link_libraries(${DEFINE_UNIT_TEST_NAME}
         PUBLIC
         Catch2::Catch2
-        lib_B
+        Daixtrose::lib_B
         fmt::fmt
         $<BUILD_INTERFACE:Daixtrose::CxxFlags>
     )
